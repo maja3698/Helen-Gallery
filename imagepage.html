@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hellen Gallery - Artwork</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="objects">
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">MEDIA</p>
+              <div class="dropdown-content">
+                <a href="#">Painting</a>
+                <a href="#">Drawing</a>
+                <a href="#">Sculpture</a>
+                <a href="#">Mixed media</a>
+                <a href="#">Walldecoration</a>
+                <a href="#">Commisioned</a>
+              </div>
+            </div>
+          </li>
+
+          <li id="theme-drops">
+            <div class="dropdown dropdown-theme">
+              <p class="dropbtn">THEME</p>
+              <div class="Tdropdown-content">
+                <!-- here goes theme-drop-temp -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">SIZE</p>
+              <div class="dropdown-content">
+                <a href="#">Small</a>
+                <a href="#">Medium</a>
+                <a href="#">Large</a>
+                <a href="#">X-Large</a>
+              </div>
+            </div>
+          </li>
+          <li>SEARCH</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main></main>
+    <template id="image-temp">
+      <img id="full-image" src="#" alt="#" />
+      <div id="image-info">
+        <p id="image-desc"></p>
+        <p id="price"></p>
+        <div id="buy-btns">
+          <button id="cart">Add to cart</button>
+          <button id="to-cart">Go to cart</button>
+        </div>
+      </div>
+    </template>
+
+    <template class="theme-temp">
+      <a id="themeName" href="themepage.html">Links and theme name</a>
+    </template>
+
+    <footer>
+      <nav>
+        <ul id="global_navigation">
+          <li>SHOPPING CART</li>
+          <li>ABOUT HELEN</li>
+          <li>EXHIBTIONS</li>
+          <li>NEWS</li>
+          <li>ABOUT US</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="imagepage.js"></script>
+    <script src="theme-slider.js"></script>
+    <script src="themename-temp.js"></script>
+    <script src="landing-theme.js"></script>
+  </body>
+</html>
