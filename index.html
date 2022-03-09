@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Hellen Gallery - Home</title>
   </head>
   <body>
     <header>
       <nav>
         <ul id="objects">
-          <li>
-            <div class="dropdown">
+          <li id="media-drops">
+            <div class="dropdown dropdown-media">
               <p class="dropbtn">MEDIA</p>
-              <div class="dropdown-content">
-                <a href="#">Painting</a>
-                <a href="#">Drawing</a>
-                <a href="#">Sculpture</a>
-                <a href="#">Mixed media</a>
-                <a href="#">Walldecoration</a>
-                <a href="#">Commisioned</a>
+              <div class="Mdropdown-content">
+                <!-- here goes media-drop-temp -->
               </div>
             </div>
           </li>
@@ -33,14 +29,12 @@
               </div>
             </div>
           </li>
-          <li>
-            <div class="dropdown">
+          
+          <li id="size-drops">
+            <div class="dropdown dropdown-size">
               <p class="dropbtn">SIZE</p>
-              <div class="dropdown-content">
-                <a href="#">Small</a>
-                <a href="#">Medium</a>
-                <a href="#">Large</a>
-                <a href="#">X-Large</a>
+              <div class="Sdropdown-content">
+                <!-- here goes size-drop-temp -->
               </div>
             </div>
           </li>
@@ -59,11 +53,19 @@
       <a id="themeName" href="themepage.html">Links and theme name</a>
     </template>
 
+    <template class="media-temp">
+      <a id="mediaName" href="themepage.html">Links and media name</a>
+    </template>
+
+    <template class="size-temp">
+      <a id="sizeName" href="themepage.html">Links and size name</a>
+    </template>
+
     <footer>
       <nav>
         <ul id="global_navigation">
           <li>SHOPPING CART</li>
-          <li>ABOUT HELEN</li>
+          <li>ABOUT HELLEN</li>
           <li>EXHIBTIONS</li>
           <li>NEWS</li>
           <li>ABOUT US</li>
@@ -73,5 +75,7 @@
     </footer>
     <script src="landingpage-script.js"></script>
     <script src="landing-theme.js"></script>
+    <script src="themename-temp.js"></script>
+    <script src="theme-slider.js"></script>
   </body>
 </html>
