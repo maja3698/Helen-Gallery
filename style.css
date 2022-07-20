@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-image: url("./image/empty-white-room.jpeg");
-  background-size:cover;
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
   font-size: 0.9rem;
 }
 
-main{
+main {
   min-height: 31rem;
   max-height: 32rem;
 }
@@ -118,17 +118,15 @@ main{
 /* THEME SITE START */
 
 .slider {
-  
   display: flex;
   flex-direction: column-reverse;
   align-content: center;
   height: 300px;
   place-items: center;
   overflow: hidden;
-  margin: auto; 
-  width: 77%; 
-   overflow: hidden;
-  
+  margin: auto;
+  width: 77%;
+  overflow: hidden;
 }
 
 #slideshow-con {
@@ -139,12 +137,9 @@ main{
   animation: scroll 120s linear infinite;
 }
 
-#slideshow-con:hover{
+#slideshow-con:hover {
   animation-play-state: paused;
 }
-
- 
-
 
 .slide {
   height: 300px;
@@ -162,7 +157,7 @@ main{
 }
 
 .slideimg {
-  transition: transform .2s; 
+  transition: transform 0.2s;
 
   width: 400px;
   height: auto;
@@ -171,8 +166,6 @@ main{
 .slideimg:hover {
   /* transform:translateX(20px); */
   transform: scale(1.5);
-
-  
 }
 
 @keyframes scroll {
@@ -184,13 +177,12 @@ main{
   }
 }
 
-
 #desc {
   display: flex;
   margin: auto;
   flex-direction: column;
   justify-items: center;
- 
+
   /* align-items: center; */
   max-width: 50vw;
 }
@@ -205,10 +197,51 @@ main{
   margin: auto;
 }
 
-#image-info{
+#image-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+#about-artwork {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 0.3rem;
+}
+
+#image-container{
+  display: flex;
+  align-items: flex-end;
+  gap: 5rem;
+  margin: 2rem;
+}
 /* IMAGE PAGE END */
+
+/*SEARCH PAGE*/
+#searching{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.results-container{
+background-color: rgb(238, 238, 238);
+width: 76%;;
+  height: 20rem;
+ 
+  overflow: scroll;
+}
+
+.list img{
+  width: auto;
+  height: 150px;
+}
+
+.list .search-con {
+  display: flex;
+  justify-content:  space-between;
+  padding: 0 3rem 2rem 3rem;
+}
