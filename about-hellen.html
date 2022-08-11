@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-2.css" />
 
     <title>Hellen Gallery - ABOUT</title>
   </head>
@@ -42,19 +42,39 @@
         </ul>
       </nav>
     </header>
-    <main> </main>
+    <main id="about-main"> </main>
 
     <template id="hellen-temp">
-        <iframe width="420" height="315" src="#" aria-label="video"></iframe>
-        <section>
+        <div id="about">
+        <div class="hellen-video">
+            <iframe
+            width="100%"
+            height="100%"
+              src="#"
+              title="YouTube video player"
+              frameborder="0"
+              allow="autoloop mute"
+              allowfullscreen
+            ></iframe>
+          </div>
+        <section id="about-info">
+            <img src="#" alt="picture of Hellen Lassen">
+            <div>
             <h3>Hellen Lassen</h3>
             <p id="adresse"></p>
             <p id="tlf"></p>
             <p id="mail"></p>
             <p id="hjemmeside"></p>
+            </div>
+            
         </section>
+        <section id="about-article">
+            <h4>About Hellen Lassen</h4>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed leo in diam egestas suscipit non et lorem. Maecenas ultricies porta lobortis. Proin at urna eros. Donec sit amet justo eu est facilisis pulvinar a et ante. Aliquam ullamcorper tellus in eleifend mattis. Quisque ipsum augue, molestie ut efficitur et, rutrum ac enim. Etiam laoreet, velit ut placerat semper, turpis tellus consectetur metus, eu mattis diam nisl at orci. Vivamus sagittis volutpat turpis, ac iaculis felis. Suspendisse ex lacus, facilisis quis est eget, maximus cursus orci. Phasellus risus arcu, rutrum eu neque non, vestibulum consequat turpis. Nam ligula augue, pellentesque eget euismod eget, iaculis quis sapien. Donec pretium fringilla orci, sed accumsan massa sodales ut. Aenean vehicula quam eu mauris luctus, id efficitur purus ultrices. Etiam accumsan velit et scelerisque gravida. Quisque et leo augue. </p>
+        </section>
+        </div>
 
-        <img src="image/empty-white-room.jpeg" alt="#">
+        
     </template>
 
     <template class="theme-temp">

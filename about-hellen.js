@@ -16,7 +16,7 @@ function handleAboutpage(page) {
 function showAboutpage(aboutpage) {
   const template = document.querySelector("#hellen-temp").content;
   const copy = template.cloneNode(true);
-  copy.querySelector("iframe").src = `https://www.youtube.com/watch?v=${aboutpage.video}`
+  copy.querySelector("iframe").src = `https://www.youtube.com/embed/${aboutpage.video}`
   copy.querySelector("#adresse").textContent = aboutpage.adresse;
   copy.querySelector("#tlf").textContent = aboutpage.telefonnummer;
   copy.querySelector("#mail").textContent = aboutpage.mail;

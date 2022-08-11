@@ -2,6 +2,7 @@
 window.addEventListener("DOMContentLoaded", runJSON);
 
 async function runJSON() {
+  
 
   const themebase = await fetch("https://bymabe.dk/hellengallery-wp/wp-json/wp/v2/categories?_embed??&parent=16");
   const themeArray = await themebase.json();

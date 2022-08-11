@@ -3,6 +3,18 @@ const imageid = imageParams.get("id");
 
 const imagebase = `https://bymabe.dk/hellengallery-wp/wp-json/wp/v2/theme-slideshow/${imageid}?_embed`;
 
+
+let buyingArry = []
+let arryimg = []
+
+
+const Artwork =  {
+  title: "",
+  artnr: "",
+  price: "",
+  onSale: false
+}
+
 fetch(imagebase)
   .then(function (res) {
     return res.json();
@@ -10,6 +22,8 @@ fetch(imagebase)
   .then(function (data) {
     showImages(data);
     console.log(data);
+
+    prepareArtworks(data);
   });
 
 // function handleImages(data) {
@@ -30,4 +44,25 @@ function showImages(image) {
 
   const parent = document.querySelector("main");
   parent.appendChild(imagecopy);
+}
+
+
+function prepareArtworks (data) {
+  let arryimg = Object.values(data)
+  console.log("eu", arryimg)
+  const arry = arryimg.map(prepareArtwork)
+  return arry;
+
+}
+
+function prepareArtwork (arry) {
+  const artwork = Object.create(Artwork)
+  
+
+  artwork.price =  arry.price_for_artwork
+
+  console.log("arry:",arry.price_for_artwork)
+
+  return artwork;
+
 }
